@@ -1,0 +1,115 @@
+/* General page background */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0d0d2b, #2e2e73);
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Game container card */
+.game-container {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 30px 40px;
+  width: 350px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+/* Game title */
+.game-container h1 {
+  color: #50fa7b;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Scores */
+.scores {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.scores span {
+  font-weight: bold;
+}
+
+/* Round info */
+.round-info {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 8px;
+  margin: 20px 0;
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* Choice buttons */
+.choices {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.choice-button {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.choice-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+/* User and computer choices display */
+.results {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.result-box {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 45%;
+  font-size: 18px;
+}
+
+/* Message area */
+.message {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* Reset Button */
+.reset-button {
+  background: linear-gradient(90deg, #ff7b00, #ff4500);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.reset-button:hover {
+  opacity: 0.8;
+}
