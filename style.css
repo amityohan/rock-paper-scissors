@@ -1,0 +1,189 @@
+/* ============================================================
+   Base Layout and Dark Neon Background Theme
+   - Applies a modern neon/cyberpunk style to the whole page
+   ============================================================ */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c); /* Dark grayscale gradient */
+  font-family: 'Poppins', sans-serif; /* Clean, modern font family */
+  color: #e0e0e0; /* Soft off-white for better contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* ============================================================
+   Main Game Container
+   - A centered card with a frosted-glass neon feel
+   ============================================================ */
+.game-container {
+  background: rgba(30, 30, 30, 0.6); /* Translucent dark overlay */
+  border: 2px solid #00ffe0; /* Neon cyan border for glowing effect */
+  border-radius: 16px;
+  padding: 35px 45px;
+  width: 90%;
+  max-width: 420px;
+  box-shadow: 0 0 25px #00ffe0aa; /* Glowing outer shadow */
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+/* ============================================================
+   Game Title
+   - Eye-catching neon-colored heading
+   ============================================================ */
+.game-container h1 {
+  color: #ff00c8; /* Bright pink/magenta for cyberpunk tone */
+  font-size: 30px;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+/* ============================================================
+   Score Section
+   - Displays player and computer score with strong contrast
+   ============================================================ */
+.scores {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #00ffe0;
+}
+
+.scores span {
+  font-weight: bold;
+}
+
+/* ============================================================
+   Round Information
+   - Displays current round number or status
+   ============================================================ */
+.round-info {
+  background: rgba(255, 255, 255, 0.08);
+  border-left: 4px solid #00ffe0;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 20px 0;
+  font-size: 14px;
+  color: #bbbbbb;
+}
+
+/* ============================================================
+   Player Choice Section
+   - Interactive buttons for user input
+   ============================================================ */
+.choices {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.choice-button {
+  background: #1c1c1c;
+  border: 1px solid #555;
+  padding: 14px 22px;
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  min-width: 110px;
+}
+
+.choice-button:hover,
+.choice-button:focus {
+  background: #00ffe0;
+  color: #000000;
+  transform: scale(1.08);
+  box-shadow: 0 0 12px #00ffe0;
+  outline: none;
+}
+
+/* ============================================================
+   Result Section
+   - Shows the chosen options of both players
+   ============================================================ */
+.results {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.result-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #ff00c8;
+  border-radius: 10px;
+  padding: 18px;
+  flex: 1 1 45%;
+  font-size: 17px;
+  text-align: center;
+  transition: transform 0.3s;
+  color: #ff00c8;
+}
+
+/* ============================================================
+   Feedback Message
+   - Dynamic area showing round result or notifications
+   ============================================================ */
+.message {
+  background: rgba(255, 255, 255, 0.1);
+  border-left: 4px solid #ff00c8;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 25px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* ============================================================
+   Reset Game Button
+   - Prominent button with warm glow effect
+   ============================================================ */
+.reset-button {
+  background: linear-gradient(90deg, #ff7b00, #ff0066);
+  border: none;
+  border-radius: 10px;
+  padding: 13px 22px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.reset-button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #ff7b00;
+}
+
+/* ============================================================
+   Mobile Responsive Styling
+   - Adjust layout and sizing for smaller screen widths
+   ============================================================ */
+@media (max-width: 420px) {
+  .scores,
+  .results {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .choice-button {
+    min-width: 85px;
+    font-size: 14px;
+  }
+
+  .result-box {
+    width: 100%;
+  }
+}
+
+
